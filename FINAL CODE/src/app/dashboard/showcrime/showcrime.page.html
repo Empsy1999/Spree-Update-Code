@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+ 
+
+  <div id="container">
+    <!-- <img class="hamburger-ico" src="../../../assets/Resources/4.png" alt=""> -->
+    <div class="myFirst">
+      <!-- <div class="mysearch">
+        <ion-icon class="search-icon" name="search"></ion-icon>
+        <input type="text" placeholder="Search Destination">
+      </div> -->
+
+      <div class="greenbg">
+        <a routerLink="/dashboard/profile"><ion-icon class="close-icon" color="#fff" name="close-circle"></ion-icon></a>
+        
+        <app-preferences></app-preferences>
+
+        <div class="myothergreen">
+          <div class="offlineandp">
+            <img (click)="showAreasOnMap()" src="../../../assets/Resources/10.png" alt="">
+            <div>
+
+              <select name="selectCrime" [(ngModel)]="selectedCrime">
+                <option value="">Select Crime</option>
+                <option *ngFor="let crime of crimes" [value]="crime.value">{{ crime.text}}</option>
+              </select>
+              <input type="range" [(ngModel)]="density">
+              <p>Adjust Crime Density threshold</p>
+            </div>
+          </div>
+
+          
+        </div>
+
+
+      </div>
+
+
+      <div class="secondDiv footer3">
+        <app-bottom-tabs></app-bottom-tabs>
+      </div>
+    </div>
+  </div>
+</ion-content>

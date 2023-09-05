@@ -1,0 +1,80 @@
+#container {
+  text-align: center;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  .myFirst {
+    background: url(../../assets/Resources/Background.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .secondDiv {
+      background-color: #968e60;
+      width: 84%;
+      margin: 0 auto;
+      .loginandsignup {
+        display: flex;
+        align-items: center;
+        .login {
+          img {
+            width: 25%;
+          }
+        }
+        .signup {
+          img {
+            width: 25%;
+          }
+        }
+        h3 {
+          font-family: "Roboto Condensed", sans-serif;
+          font-weight: 700;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .loginInputs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      padding-bottom: 50px;
+      button {
+        background-color: #dabf29;
+        color: white;
+        padding: 10px 28px;
+        border-radius: 10px;
+      }
+      .myPreviewBox {
+        width: 70px;
+        /* height: 140px; */
+      }
+      input {
+        border: 2px solid #000;
+        border-radius: 10px;
+        background: #dabf29;
+        padding: 3px 10px;
+        width: 80%;
+        &::placeholder {
+          color: black;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+  .compass {
+    width: 70%;
+    padding-top: 40px;
+  }
+}

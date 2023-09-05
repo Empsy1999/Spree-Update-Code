@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" (click)="goBack()">Back</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <div id="container">
+    <div class="myFirst">
+      <div class="secondDiv">
+        <!-- <h1>test</h1> -->
+        <img class="compass" src="../../assets/Resources/3.png" alt="">
+        <div class="loginandsignup">
+          <div class="login">
+            <img src="../../assets/Resources/1.png" alt="">
+            <h3>login</h3>
+          </div>
+        </div>
+        <!-- <img class="bottom-icon" src="../../assets/Resources/loginpage.png" alt=""> -->
+        <div class="loginInputs">
+          <input type="email" [(ngModel)]="email" placeholder="Enter Email">
+          <input type="password" placeholder="Enter Password" [(ngModel)]="password">
+          <button [disabled]="loading" class="btn custom-button" ion-button (click)="submitForm()">{{ loading ? 'Please Wait...' : 'Login'}}</button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

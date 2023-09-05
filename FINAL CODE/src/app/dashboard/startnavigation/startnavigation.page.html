@@ -1,0 +1,66 @@
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Back</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <div id="container">
+    <!-- <img class="hamburger-ico" src="../../../assets/Resources/4.png" alt=""> -->
+    <div class="myFirst">
+      <div class="mysearch">
+        <ion-icon class="search-icon" name="search"></ion-icon>
+        <input type="text" #autocomplete [(ngModel)]="destination.Barangay" (click)="presentAreaModal()" placeholder="Search Destination">
+      </div>
+
+      <div class="greenbg">
+
+        <a routerLink="/dashboard/profile"><ion-icon class="close-icon" color="#fff" name="close-circle"></ion-icon></a>
+
+        <app-preferences></app-preferences>
+
+        <div class="myothergreen">
+          <div class="offlineandp">
+            <a style="display: flex" (click)="navigate()"><img src="../../../assets/Resources/12.png"></a>
+            <!-- <div class="firsttwo"> -->
+
+              <!-- <div>
+                <div>
+                  <ion-toggle color="dark" checked label="Enable notifications"></ion-toggle>
+                  <p> Avoid High Risk Area</p>
+                </div>
+                <div>
+                  <ion-toggle color="dark" checked label="Enable notifications"></ion-toggle>
+                  <p> Turn by turn direction</p>
+                </div>
+              </div>
+              <div>
+                <ion-toggle color="dark" checked label="Enable notifications"></ion-toggle>
+                <p> Avoid Traffice</p>
+              </div> -->
+            <!-- </div> -->
+
+          </div>
+          <div class="report-incident">
+            <textarea cols="5" [(ngModel)]="reportText" rows="5" placeholder="Report incident ..." value=""></textarea>
+            <button type="button" (click)="submitReport()" [disabled]="!reportText">
+              Submit Report
+            </button>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="secondDiv footer3">
+        <app-bottom-tabs></app-bottom-tabs>
+      </div>
+
+      <ion-alert [isOpen]="isAlertOpen" header="Report incident" subHeader="" message="Report submitted successfully"
+        [buttons]="alertButtons" (didDismiss)="submitReport()"></ion-alert>
+    </div>
+  </div>
+</ion-content>

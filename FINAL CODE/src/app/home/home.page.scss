@@ -1,0 +1,79 @@
+#container {
+  text-align: center;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+
+  .myFirst {
+    background: url(../../assets/Resources/Background.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .secondDiv {
+      background-color: #968e60;
+      width: 84%;
+      margin: 0 auto;
+
+      .loginandsignup {
+        display: flex;
+        align-items: center;
+
+        .login {
+          img {
+            width: 35%;
+          }
+
+        }
+
+        .signup {
+          img {
+            width: 35%;
+          }
+
+        }
+
+        h3 {
+          font-family: 'Roboto Condensed', sans-serif;
+          font-weight: 700;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .compass {
+    width: 70%;
+    padding-top: 40px;
+  }
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}

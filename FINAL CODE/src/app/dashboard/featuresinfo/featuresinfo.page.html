@@ -1,0 +1,84 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">featuresinfo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+<ion-content [fullscreen]="true">
+
+
+  <div id="container">
+    <!-- <img class="hamburger-ico" src="../../../assets/Resources/4.png" alt=""> -->
+    <div class="myFirst">
+      <!-- <div class="mysearch">
+        <ion-icon class="search-icon" name="search"></ion-icon>
+        <input type="text" placeholder="Search Destination">
+      </div> -->
+
+      <div class="greenbg">
+
+        <a routerLink="/dashboard/profile"><ion-icon class="close-icon" color="#fff" name="close-circle"></ion-icon></a>
+        <app-preferences></app-preferences>
+
+        <div class="myothergreen">
+          <div class="offlineandp">
+            <img src="../../../assets/Resources/17.png" alt="">
+            <!-- <div>
+              <ion-toggle color="dark" checked label="Enable notifications"></ion-toggle>
+              <p> Detect time of the day</p>
+            </div>
+            <div>
+              <ion-toggle color="dark" checked label="Enable notifications"></ion-toggle>
+              <p> Switch to Day and night mode</p>
+            </div> -->
+
+          </div>
+          <div class="displaytexthere" style="height: 150px; overflow-y: auto; text-align: left;">
+
+            Here's a descriptive feature information for your app: <br><br>
+            1. Map Interface: Explore the intuitive map interface that allows you to search for your destination within
+            the Legarda-Burnham-Kisad, Session-Governor Pack Road, AZCKO areas. Easily find the places you need to go
+            and plan your route accordingly.<br><br>
+            2. Crime Hotspot Identification: Our app employs powerful machine learning models, including KDE, k-means,
+            DBSCAN, and classification algorithms, to identify crime hotspots within the three barangays. Stay informed
+            about areas with higher crime rates and make informed decisions about your route.<br><br>
+            3. Pathfinding Algorithms: Discover the power of advanced pathfinding algorithms like Dijkstra's Algorithm
+            and A* Algorithm. These algorithms analyze the road network and provide you with safer and shorter
+            alternative routes to your destination. Enjoy efficient and optimized navigation.<br><br>
+            4. Real-time Navigation: Experience real-time navigation with turn-by-turn directions to your destination.
+            Our app constantly updates your route based on real-time traffic conditions, ensuring you reach your
+            destination efficiently. Stay on track with clear instructions.<br><br>
+            5. Additional Safer Route Suggestions: In addition to the primary route, our app offers additional safer
+            route suggestions. Each suggestion comes with a path risk level indicator, allowing you to choose the route
+            that aligns with your safety preferences and concerns.<br><br>
+            6. Offline Use: No internet connection? No problem! Our app provides offline functionality, allowing you to
+            access estimated travel times for different routes even when you're offline. Stay prepared and navigate
+            confidently, regardless of connectivity.<br><br>
+            7. Help and Support: Need assistance or have questions? Our app offers comprehensive help and support
+            resources. Access FAQs, tutorials, and contact our dedicated support team directly from within the app.
+            We're here to ensure you have a smooth and hassle-free experience.<br><br>
+            8. Personalized Settings: Customize the app to suit your preferences. Adjust navigation settings, set
+            destination preferences, and choose between different map styles. Tailor the app to your unique needs and
+            navigation preferences.<br><br>
+            9. Security and Privacy: We prioritize the security and privacy of your data. Rest assured that your
+            personal information and location data are handled with the utmost care and kept confidential. We adhere to
+            strict privacy standards to protect your sensitive information.
+
+
+          </div>
+          <!-- <img class="adjustCrime" src="../../../assets/Resources/icon111.png" alt=""> -->
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="secondDiv footer3">
+        <app-bottom-tabs></app-bottom-tabs>
+      </div>
+    </div>
+  </div>
+</ion-content>

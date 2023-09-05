@@ -1,0 +1,79 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">featuresinfo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Back</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <div id="container">
+    <!-- <img class="hamburger-ico" src="../../../assets/Resources/4.png" alt=""> -->
+    <div class="myFirst">
+      <!-- <div class="mysearch">
+        <ion-icon class="search-icon" name="search"></ion-icon>
+        <input type="text" placeholder="Search Destination">
+      </div> -->
+
+      <div class="greenbg">
+        <a routerLink="/dashboard/profile"><ion-icon class="close-icon" color="#fff" name="close-circle"></ion-icon></a>
+        <app-preferences></app-preferences>
+        <div class="myothergreen">
+          <div class="offlineandp">
+            <img src="../../../assets/Resources/14.png" alt="">
+            <!-- <div>
+              <ion-toggle color="dark" checked label="Enable notifications"></ion-toggle>
+              <p> Detect time of the day</p>
+            </div>
+            <div>
+              <ion-toggle color="dark" checked label="Enable notifications"></ion-toggle>
+              <p> Switch to Day and night mode</p>
+            </div> -->
+
+          </div>
+          <div class="displaytexthere" style="height: 150px; overflow-y: auto; text-align: left;">
+
+            Here's a brief information description for help and support that you can provide to users:
+            Welcome to our app! We're here to help you navigate safely through the Legarda-Burnham-Kisad,
+            Session-Governor Pack Road, AZCKO areas. If you have any questions or need assistance, we've got you
+            covered.<br /><br>
+            1. Map Interface: Use the map interface to search for your destination within the three barangays. Simply
+            enter your desired location, and we'll provide you with the best routes available. <br><br>
+            2. Crime Hotspot Identification: Our app utilizes advanced machine learning models like KDE, k-means,
+            DBSCAN, and classification algorithms to identify crime hotspots in the area. Stay informed and make
+            informed decisions about your route.<br><br>
+            3. Pathfinding Algorithms: We've developed efficient pathfinding algorithms like Dijkstra's Algorithm and A*
+            Algorithm to find safer and shorter alternative routes to your destination. Discover new paths and choose
+            the one that suits you best.<br><br>
+            4. Real-time Navigation: Enjoy the convenience of real-time navigation with turn-by-turn directions. We'll
+            guide you step-by-step to your destination, including the safer and shorter alternative route if available.<br><br>
+            5. Additional Safer Route Suggestions: Our app provides additional safer route suggestions. Each suggestion
+            comes with a path risk level indicator, helping you make the safest choices for your journey.<br><br>
+            6. Offline Use: Don't worry about internet connectivity! Our app features offline use, allowing you to
+            access estimated travel times for different routes even when you're offline.
+            For further assistance or if you encounter any issues, please reach out to our support team. We're dedicated
+            to providing you with a seamless and secure navigation experience.
+            Stay safe, explore with confidence, and enjoy your journey with our app!<br><br>
+
+
+          </div>
+          <!-- <img class="adjustCrime" src="../../../assets/Resources/icon111.png" alt=""> -->
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="secondDiv footer3">
+        <app-bottom-tabs></app-bottom-tabs>
+      </div>
+    </div>
+  </div>
+</ion-content>

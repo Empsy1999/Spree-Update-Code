@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <a routerLink="/dashboard/profile"><img class="hamburger-ico" src="../../../assets/Resources/4.png" alt=""></a>
+    <div class="myFirst">
+      <div id="container">
+        <div id="map" #map style="width: 100%; height: 100%"></div>
+      </div>
+
+      <div class="mysearch">
+        <ion-icon class="search-icon" name="search"></ion-icon>
+        <input type="text" #autocomplete [(ngModel)]="destination.Barangay" (click)="presentAreaModal()" placeholder="Search Destination">
+      </div>
+
+      <div class="fordashboard">
+        
+        <div class="secondDiv footer3">
+
+          <div class="loginandsignup">
+            <div class="login">
+              <img src="../../../assets/Resources/5.png">
+              <h3><a (click)="signOut()"> Sign Out</a></h3>
+            </div>
+            <div class="signup">
+              <img src="../../../assets/Resources/6.png">
+
+              <h3><a routerLink="/dashboard/profile">Profile</a></h3>
+            </div>
+            <div class="signup">
+              <img src="../../../assets/Resources/7.png">
+
+              <h3><a routerLink="/dashboard/about">About</a></h3>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

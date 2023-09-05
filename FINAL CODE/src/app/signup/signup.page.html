@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large" (click)="goBack()">Back</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <div id="container">
+        <div class="myFirst">
+            <div class="secondDiv">
+                <!-- <h1>test</h1> -->
+                <img class="compass" src="../../assets/Resources/3.png" alt="" />
+                <div class="loginandsignup">
+                 
+                    <div class="signup">
+                        <img src="../../assets/Resources/2.png" alt="" />
+
+                        <h3>Sign Up</h3>
+                    </div>
+                </div>
+                <!-- <img class="bottom-icon" src="../../assets/Resources/loginpage.png" alt=""> -->
+                <div class="loginInputs">
+                    <input type="text" placeholder="Enter Name" [(ngModel)]="name" required />
+                    <input type="email" placeholder="Enter Email" [(ngModel)]="email"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required />
+
+                    <input type="password" placeholder="Enter Password" [(ngModel)]="password" required />
+                    <input type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword" required />
+                    <label for="">
+                        Attach Valid Id Picture
+                        <input type="file" placeholder="Attach Valid Id Picture" (change)="onFileChange($event)"
+                            required />
+                    </label>
+                    <div class="myPreviewBox">
+                        <img *ngIf="fileContents" src="{{ fileContents }}" />
+                    </div>
+
+                    <button [disabled]="loading" ion-button (click)="submitForm()">{{ loading ? 'Please Wait...' : 'Submit'}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

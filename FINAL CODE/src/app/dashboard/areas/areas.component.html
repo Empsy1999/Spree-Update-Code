@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Destinations</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let area of areas">
+      <ion-label (click)="selectArea(area)">{{ area.Barangay }}</ion-label>
+    </ion-item>
+    </ion-list>
+</ion-content>

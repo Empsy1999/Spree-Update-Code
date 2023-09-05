@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <a routerLink="/dashboard"><img class="hamburger-ico" src="../../../assets/Resources/18.png" alt=""></a>
+    <div class="myFirst">
+      <!-- <div class="mysearch">
+        <ion-icon class="search-icon" name="search"></ion-icon>
+        <input type="text" placeholder="Search Destination">
+      </div> -->
+
+      <div class="greenbg">
+        <div class="update-profile">
+          <div class="left">
+            <div class="wrapper">
+              <ng-template [ngIf]="fileContents">
+                <img src="{{ fileContents }}" />
+              </ng-template>
+              <ng-template [ngIf]="profile.image && !fileContents">
+                <img [src]="profile.image">
+              </ng-template>
+              <ng-template [ngIf]="!profile.image && !fileContents">
+                <img src="../../../assets/Resources/6.png" alt="">
+              </ng-template>
+              <input type="file" (change)="onFileChange($event)" style="display: none;" #file>
+              <p (click)="file.click()">Upload Image</p>
+            </div>
+          </div>
+          <div class="right">
+            <input type="text" placeholder="Name" [(ngModel)]="profile.name">
+            <input type="text" placeholder="Address" [(ngModel)]="profile.address">
+            <input type="text" placeholder="Email" [(ngModel)]="profile.email" disabled>
+          </div>
+        </div>
+        <app-preferences></app-preferences>
+      </div>
+      <div class="secondDiv footer3">
+        <app-bottom-tabs></app-bottom-tabs>
+      </div>
+    </div>
+  </div>
+</ion-content>
